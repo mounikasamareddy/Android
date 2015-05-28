@@ -1,26 +1,20 @@
-package com.example.sampledemo;
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
+# Add any project specific keep options here:
 
-public class MainActivity extends Activity{
-	private RelativeLayout calendarClick;
-	
-	protected void onCreat(Bundle savedInstanceState){
-		
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		String str="ghsfgdsh,sjhfsdj,sjhfdf";
-		String names[];
-		
-		names=str.split(",");
-		for(int i=0;i<names.length;i++)
-		{
-			Toast.makeText(getApplicationContext(), names[i], Toast.LENGTH_LONG).show();
-		}
-		
-	    }
-
-}
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
